@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Verde Radice - Cucina Vegana</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="restaurant-landing" class="verde-radice-landing">
+        <header class="hero">
+            <nav class="navbar">
+                <img src="logo.svg" alt="Verde Radice Logo" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#menu">Menù</a></li>
+                    <li><a href="#prenotazioni">Prenota</a></li>
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hero-content">
+                <h1>Cucina Vegana che Trasforma l'Esperienza Gastronomica</h1>
+                <p>Piatti creativi, ingredienti locali, sostenibilità totale</p>
+                <a href="#menu" class="cta-button">Scopri il Menù</a>
+            </div>
+        </header>
+
+        <section id="menu" class="menu-section">
+            <h2>Il Nostro Menù</h2>
+            <div class="menu-grid">
+                <!-- I piatti verranno caricati dinamicamente da menu.js -->
+            </div>
+        </section>
+
+        <section id="prenotazioni" class="booking-section">
+            <h2>Prenota un Tavolo</h2>
+            <form id="booking-form" class="booking-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="date" placeholder="Data" required>
+                <input type="number" placeholder="Numero Ospiti" min="1" max="10" required>
+                <button type="submit">Prenota Ora</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
